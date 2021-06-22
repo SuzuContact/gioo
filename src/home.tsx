@@ -25,6 +25,8 @@ export const HomeContainer = styled(motion.div)`
       right: 300px;
     }
     h1 {
+      background: #e3eeff;
+      border-radius: 10px;
       z-index: 2;
       padding: 0px;
       margin: 0px;
@@ -38,6 +40,7 @@ export const HomeContainer = styled(motion.div)`
       /* #FF595D */
 
       color: #f26f71;
+      padding: 15px;
     }
 
     p {
