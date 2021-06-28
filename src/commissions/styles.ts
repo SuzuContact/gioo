@@ -11,15 +11,22 @@ export const CommissionsContainer = styled(motion.div)`
     padding: 0px 50px;
   }
 
+  @media only screen and (max-width: 900px) {
+    padding: 0px 30px;
+  }
+
   h1 {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
+    font-size: clamp(42px, 6vw, 72px);
     line-height: 85px;
     text-align: right;
 
     color: ${(props) => props.theme.palette.main};
+    @media only screen and (max-width: 800px) {
+      margin: 0px;
+    }
   }
 
   h3 {
@@ -38,6 +45,9 @@ export const CommissionsContainer = styled(motion.div)`
   .show-content {
     display: flex;
     gap: 60px;
+    @media only screen and (max-width: 800px) {
+      gap: 30px;
+    }
 
     @media only screen and (max-width: 1366px) {
       flex-direction: column-reverse;
@@ -46,6 +56,9 @@ export const CommissionsContainer = styled(motion.div)`
       flex: 2;
       flex-grow: 2;
       margin-top: 30px;
+      @media only screen and (max-width: 800px) {
+        margin-top: 0px;
+      }
 
       .tabContents {
         background: white;
@@ -106,9 +119,13 @@ export const CommissionsContainer = styled(motion.div)`
   }
 
   .additional {
+    margin-top: 30px;
     .tags {
+      overflow: auto;
       display: flex;
       flex-wrap: wrap;
+      /* max-height: 100vh; */
+      /* flex-direction: column; */
 
       justify-content: space-around;
       align-content: space-around;
@@ -118,6 +135,9 @@ export const CommissionsContainer = styled(motion.div)`
       gap: 60px;
 
       .tag {
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -154,9 +174,16 @@ export const CommissionsContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
 
     button {
       margin: 100px 0px;
+      @media only screen and (max-width: 800px) {
+        margin: 30px 0px;
+        width: 100%;
+      }
 
       background: linear-gradient(270deg, #467fd7 0%, #f3575a 100%);
       border-radius: 50px;

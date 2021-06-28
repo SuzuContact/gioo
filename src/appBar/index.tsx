@@ -16,10 +16,7 @@ export default function AppBar() {
           >
             Galeria
           </ButtonBase>
-          <ButtonBase
-            onClick={() => history.push("/portfolio")}
-            className="item"
-          >
+          <ButtonBase onClick={() => history.push("/contato")} className="item">
             Contato
           </ButtonBase>
           <ButtonBase

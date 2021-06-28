@@ -109,7 +109,14 @@ export default function PortPage() {
       variants={containerVar}
     >
       {commissionData.map((commissionItemData, index) => (
-        <motion.div animate="visible" whileHover="hover" className="img-cont">
+        <motion.div
+          whileTap={{
+            scale: 0.9,
+          }}
+          animate="visible"
+          whileHover="hover"
+          className="img-cont"
+        >
           <motion.div
             variants={itemVar}
             className="img"
