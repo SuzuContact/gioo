@@ -10,14 +10,17 @@ export default function AppBar() {
       <div className="content">
         <h3 onClick={() => history.push("/")}>Gioo</h3>
         <div className="items">
+          <ButtonBase onClick={() => history.push("/termos")} className="item">
+            Terms
+          </ButtonBase>
           <ButtonBase
             onClick={() => history.push("/portfolio")}
             className="item"
           >
-            Galeria
+            Gallery
           </ButtonBase>
           <ButtonBase onClick={() => history.push("/contato")} className="item">
-            Contato
+            Contact
           </ButtonBase>
           <ButtonBase
             onClick={() => history.push("/commissions")}

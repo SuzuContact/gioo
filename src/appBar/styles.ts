@@ -9,6 +9,10 @@ export const AppBarContainer = styled(motion.div)`
 
   background: #e3eeff;
 
+  @media only screen and (max-width: 1400px) {
+    padding: 0px 30px;
+  }
+
   .content {
     display: flex;
     align-items: center;
