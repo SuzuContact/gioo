@@ -17,8 +17,8 @@ export default function CommissionsPage() {
       <h1>Commission</h1>
       <ShowCommission
         url={[
-          "/gif/2021-07-06_19-25-23_Trim.gif",
-          "/gif/final.gif",
+          "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-07-06_19-25-23_Trim.gif?alt=media&token=9df199c1-a445-410a-b001-550ddbe0ec9d",
+          "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/final.gif?alt=media&token=59b178e1-ff73-4c6a-9c8c-d21953d79200",
           "/images/simples.png",
         ]}
         title="Rigging"

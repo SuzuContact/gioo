@@ -126,8 +126,10 @@ export async function getStaticProps(context) {
     {
       id: 1,
       title: "AmoreSucubbus",
-      image: "/gif/2021-07-06_19-25-23_Trim.gif",
-      minuature: "/gif/2021-07-06_19-25-23_Trim.gif",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-07-06_19-25-23_Trim.gif?alt=media&token=9df199c1-a445-410a-b001-550ddbe0ec9d",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-07-06_19-25-23_Trim.gif?alt=media&token=9df199c1-a445-410a-b001-550ddbe0ec9d",
       type: "img",
     },
     {
@@ -140,15 +142,19 @@ export async function getStaticProps(context) {
     {
       id: 3,
       title: "Apocrypha",
-      image: "/gif/2021-06-23_21-28-05_Trim.gif",
-      minuature: "/gif/2021-06-23_21-28-05_Trim.gif",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-23_21-28-05_Trim.gif?alt=media&token=8c523c4b-096a-49e4-9a4c-201726e0b060",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-23_21-28-05_Trim.gif?alt=media&token=8c523c4b-096a-49e4-9a4c-201726e0b060",
       type: "img",
     },
     {
       id: 4,
       title: "Eye animation",
-      image: "/gif/2021-06-02_15-28-24_Trim.gif",
-      minuature: "/gif/2021-06-02_15-28-24_Trim.gif",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-02_15-28-24_Trim.gif?alt=media&token=7a163e94-09fb-4e3d-bfe2-f1072669c09d",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-02_15-28-24_Trim.gif?alt=media&token=7a163e94-09fb-4e3d-bfe2-f1072669c09d",
       type: "img",
     },
     {
@@ -161,8 +167,10 @@ export async function getStaticProps(context) {
     {
       id: 6,
       title: "Abbadon, Art: Taka",
-      image: "/gif/2021-04-25_01-03-12_Trim_2.gif",
-      minuature: "/gif/2021-04-25_01-03-12_Trim_2.gif",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-04-25_01-03-12_Trim_2.gif?alt=media&token=62b68508-cf7a-4b0a-879b-0954dbdf4f36",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-04-25_01-03-12_Trim_2.gif?alt=media&token=62b68508-cf7a-4b0a-879b-0954dbdf4f36",
       type: "img",
     },
   ];
