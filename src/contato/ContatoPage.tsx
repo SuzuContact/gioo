@@ -17,10 +17,10 @@ export default function ContatoPage() {
 
     emailjs
       .sendForm(
-        "service_fn8g7gj",
-        "template_gzese6q",
+        "service_0luwj8a",
+        "template_a6lw308",
         e.target,
-        "user_pmYRF2IiMgo3UnQAGAvp6"
+        "user_YBSoXIwpdpQ1H2OCtpt17"
       )
       .then(
         (result) => {
