@@ -42,6 +42,7 @@ export default function Home() {
               y: -10,
               filter: "hue-rotate(-20deg)",
             }}
+            onClick={() => push("/commissions")}
             whileTap={{
               scale: 0.9,
             }}
