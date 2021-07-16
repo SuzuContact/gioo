@@ -3,10 +3,11 @@ import { DefaultTheme, ThemeProvider } from "styled-components";
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import AppBar from "../src/appBar";
+import Footer from "../src/shared/footer";
 
 const theme: DefaultTheme = {
   palette: {
-    main: "#F26F71",
+    main: "#97112A",
     second: "#85ADEB",
   },
 };
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
       <AppBar />
       <AnimatePresence exitBeforeEnter>
         <Component {...pageProps} />
+        <Footer />
       </AnimatePresence>
     </ThemeProvider>
   );

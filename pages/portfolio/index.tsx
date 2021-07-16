@@ -17,10 +17,10 @@ const containerVar: Variants = {
 };
 
 const itemVar: Variants = {
-  hidden: { y: "100%", backgroundSize: "100%" },
+  hidden: { y: "100%", backgroundSize: "cover" },
   visible: {
     y: 0,
-    backgroundSize: "100%",
+    backgroundSize: "cover",
     transition: {
       duration: 0.2,
     },
@@ -93,17 +93,14 @@ export default function PortPage({ commissionData }) {
               variants={itemVar}
               className="img"
               initial={{
-                backgroundSize: "100%",
+                backgroundSize: "cover",
               }}
               animate={{
-                backgroundSize: "100%",
+                backgroundSize: "cover",
               }}
               transition={{
                 ease: "circInOut",
                 duration: 0.8,
-              }}
-              whileHover={{
-                backgroundSize: "200%",
               }}
               style={{
                 gridArea: `span 1 / span 1`,
@@ -127,51 +124,46 @@ export async function getStaticProps(context) {
       id: 1,
       title: "AmoreSucubbus",
       image:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-07-06_19-25-23_Trim.gif?alt=media&token=9df199c1-a445-410a-b001-550ddbe0ec9d",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/2021-07-06%2019-25-23_Trim.mp4?alt=media&token=eeadd219-84be-40db-8375-dfadb267e9f7",
       minuature:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-07-06_19-25-23_Trim.gif?alt=media&token=9df199c1-a445-410a-b001-550ddbe0ec9d",
-      type: "img",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/AmoreSucubbusMiniature.png?alt=media&token=a62aa23a-90dc-4db3-b3c0-4e376b40ea39",
+      type: "video",
     },
     {
       id: 2,
       title: "AmoreSucubbus",
-      image: "/gif/Scene1.gif",
-      minuature: "/gif/Scene1.gif",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/Scene1.gif?alt=media&token=cf9d5e6c-64d9-433c-b5d2-f726b0647165",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/AmoreSucubbusMiniature2.png?alt=media&token=2ff8f926-83da-484c-9729-d29a1ac7cece",
       type: "img",
     },
     {
       id: 3,
       title: "Apocrypha",
       image:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-23_21-28-05_Trim.gif?alt=media&token=8c523c4b-096a-49e4-9a4c-201726e0b060",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/2021-06-23%2021-28-05_Trim.mp4?alt=media&token=5f0be9c3-3efd-40b6-88bf-beb4fbdb3bbf",
       minuature:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-23_21-28-05_Trim.gif?alt=media&token=8c523c4b-096a-49e4-9a4c-201726e0b060",
-      type: "img",
-    },
-    {
-      id: 4,
-      title: "Eye animation",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-02_15-28-24_Trim.gif?alt=media&token=7a163e94-09fb-4e3d-bfe2-f1072669c09d",
-      minuature:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-06-02_15-28-24_Trim.gif?alt=media&token=7a163e94-09fb-4e3d-bfe2-f1072669c09d",
-      type: "img",
-    },
-    {
-      id: 5,
-      title: "Model",
-      image: "/images/GioVanillaOutfit2.png",
-      minuature: "/images/GioVanillaOutfit2.png",
-      type: "img",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/ApocryphaMiniature.png?alt=media&token=6d41f1f0-59a5-4583-b56e-64d4d316d8e0",
+      type: "video",
     },
     {
       id: 6,
       title: "Abbadon, Art: Taka",
       image:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-04-25_01-03-12_Trim_2.gif?alt=media&token=62b68508-cf7a-4b0a-879b-0954dbdf4f36",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/2021-05-12%2016-08-30.mp4?alt=media&token=3391d3a4-fd31-4f6b-a317-a132d62797af",
       minuature:
-        "https://firebasestorage.googleapis.com/v0/b/hololive-6a02e.appspot.com/o/2021-04-25_01-03-12_Trim_2.gif?alt=media&token=62b68508-cf7a-4b0a-879b-0954dbdf4f36",
-      type: "img",
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/AbbadonMiniature.png?alt=media&token=d51d3426-88d8-43ca-b55f-50e1b08b9a63",
+      type: "video",
+    },
+    {
+      id: 4,
+      title: "Eye animation",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/2021-06-02%2015-28-24_Trim.mp4?alt=media&token=17855fe4-7a91-4ca5-b345-34cc249147da",
+      minuature:
+        "https://firebasestorage.googleapis.com/v0/b/giocomissions.appspot.com/o/EYE.png?alt=media&token=7f474351-b4c1-4558-add5-1adac495aab1",
+      type: "video",
     },
   ];
 

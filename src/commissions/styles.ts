@@ -2,17 +2,44 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const CommissionsContainer = styled(motion.div)`
-  max-width: 1366px;
-  margin: 0px auto;
   display: flex;
   flex-direction: column;
 
-  @media only screen and (max-width: 1366px) {
-    padding: 0px 50px;
+  .section-content {
+    max-width: 1366px;
+    /* width: 100%; */
+    margin: 0px auto;
+    padding: 50px 0px;
+
+    @media only screen and (max-width: 1366px) {
+      padding: 0px 50px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      padding: 0px 30px;
+    }
   }
 
-  @media only screen and (max-width: 900px) {
-    padding: 0px 30px;
+  .section-header {
+    background: linear-gradient(
+        -270deg,
+        rgba(255, 255, 255, 0.32),
+        rgba(255, 255, 255, 0.82),
+        rgba(255, 255, 255, 1)
+      ),
+      url("/images/SEMFUNDO_1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .section-rigging {
+    background: #f1f2ff;
+  }
+
+  .section-model {
+    background: #f1fffd;
+  }
+  .section-footer {
+    background: #b6b9e9;
   }
 
   .tab-content-item {
@@ -59,7 +86,7 @@ export const CommissionsContainer = styled(motion.div)`
     line-height: 85px;
     text-align: right;
 
-    color: ${(props) => props.theme.palette.main};
+    color: black;
     @media only screen and (max-width: 800px) {
       margin: 0px;
     }
@@ -96,7 +123,6 @@ export const CommissionsContainer = styled(motion.div)`
     text-align: right;
 
     width: 100%;
-    justify-self: flex-end;
     color: ${(props) => props.theme.palette.main};
   }
 
@@ -199,6 +225,7 @@ export const CommissionsContainer = styled(motion.div)`
       display: grid;
       grid-template-columns: repeat(3, minmax(30%, 1fr));
       @media only screen and (max-width: 1200px) {
+        grid-column-gap: 30px;
         grid-template-columns: repeat(2, minmax(calc(50% - 30px), 1fr));
       }
 
@@ -210,9 +237,12 @@ export const CommissionsContainer = styled(motion.div)`
       padding: 30px 0px;
       width: 100%;
 
-      gap: 30px;
+      /* gap: 40px; */
+      grid-column-gap: 60px;
+      grid-row-gap: 30px;
 
       .tag {
+        filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.1));
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -258,13 +288,15 @@ export const CommissionsContainer = styled(motion.div)`
   footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     @media only screen and (max-width: 800px) {
       flex-direction: column;
     }
 
     button {
-      margin: 100px 0px;
+      margin: 50px 0px;
       @media only screen and (max-width: 800px) {
         margin: 30px 0px;
         width: 100%;

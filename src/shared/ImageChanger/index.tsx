@@ -158,14 +158,10 @@ export default function ImageChanger({
               className="imgInt"
               autoPlay
               loop
-              muted
-              data-reactid=".0.1.0.0"
+              // muted
+              controls
             >
-              <source
-                type="video/webm"
-                data-reactid=".0.1.0.0.0"
-                src={images?.[imageIndex]}
-              />
+              <source type="video/mp4" src={images?.[imageIndex]} />
             </motion.video>
           )}
         </AnimatePresence>

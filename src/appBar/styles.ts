@@ -7,7 +7,7 @@ export const AppBarContainer = styled(motion.div)`
   top: 0;
   z-index: 3;
 
-  background: #e3eeff;
+  background: #f1f2ff;
 
   @media only screen and (max-width: 1400px) {
     padding: 0px 30px;
@@ -32,12 +32,14 @@ export const AppBarContainer = styled(motion.div)`
         font-size: 14px;
         margin-left: 5px;
         border-radius: 10px;
+        font-weight: 500;
         padding: 0px 20px;
         height: 100%;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: ${(props) => props.theme.palette.main};
 
         :hover {
           background: rgba(255, 255, 255, 0.5);

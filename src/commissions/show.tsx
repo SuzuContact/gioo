@@ -38,13 +38,13 @@ export default function ShowCommission({
           <div className="tab-header">
             <div className="tabTitles">
               {tabTitles.map((tabTitle, index) => (
-                <ButtonBase
+                <div
                   key={index}
                   className={`tabTitle ${active === index ? "active" : ""}`}
                   onClick={() => setActive(index)}
                 >
                   {tabTitle}
-                </ButtonBase>
+                </div>
               ))}
             </div>
             <motion.div animate={{ x: active * 150 }} className="indicator" />
